@@ -1,48 +1,28 @@
 # _config.yml
 title: TIL by Sany
-description: My learning journey - one day at a time
+description: Things I Learn Every Day
 baseurl: "/til"
 url: "https://sa-ny.github.io"
-github_username: sa-ny
 
-# Theme settings
+# Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
+  - jekyll-seo-tag
 
 # Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - README.md
+  - LICENSE
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - serve.sh
-  - setup-local.sh
-  - README.md
-
-# Default layouts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Collection settings
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/

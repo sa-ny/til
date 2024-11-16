@@ -1,27 +1,35 @@
 # _config.yml
-remote_theme: jekyll/minima
 title: TIL by Sany
-description: WHAT I LEARN IN A DAY
+description: My learning journey - one day at a time
 baseurl: "/til"
 url: "https://sa-ny.github.io"
 github_username: sa-ny
 
-# Build settings
-markdown: kramdown
+# Theme settings
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Theme settings
-minima:
-  skin: classic
-  
-# Collections
-collections:
-  tags:
-    output: true
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - serve.sh
+  - setup-local.sh
+  - README.md
+
+# Default layouts
 defaults:
   - scope:
       path: ""
@@ -32,3 +40,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Collection settings
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/

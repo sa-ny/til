@@ -1,0 +1,12 @@
+title: TIL by sa-ny
+description: My learning journey - one day at a time
+baseurl: "/til"
+url: "https://sa-ny.github.io"
+github_username: sa-ny
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+collections:
+  tags:
+    output: true
